@@ -54,6 +54,7 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-weight: 600;
 }
 
 h1, h2, h3, h4, h5 {
@@ -68,14 +69,16 @@ p {
 
 header nav {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 2%;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 800px;
+    margin: 3% auto;
 }
 
 header nav a {
     color: black;
     text-decoration: none;
+    margin-right: 20px;
 }
 
 header div {
@@ -98,20 +101,51 @@ header div {
     border-bottom: 1px dashed black;
 }
 
+.top-content.about-page {
+    justify-content: flex-start;
+    padding-bottom: 20px;
+}
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
 }
 
-.middle-content {
+.middle-content .text-image {
+    width: 48%;
+    padding: 0 1%;
+    padding-bottom: 20px; 
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
 }
 
+
+.middle-content.about-page{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 .middle-content h2 {
     padding: 0 2%;
     margin-bottom: 0;
+}
+
+.middle-content.about-page h2 {
+    padding: 2% 0;
+    margin-bottom: 15px;
+}
+
+.middle-content p {
+    margin: 3% 0;
+}
+
+.middle-content p:last-child {
+    text-align: center;
+    border: 2px solid black;
+    width: 120px;
+    border-radius: 15px;
+    padding: 2% 15px;;
 }
 
 .middle-content .boxes {
@@ -137,6 +171,9 @@ header div {
     justify-content: space-around;
 }
 
+.bottom-content.about-page {
+    margin: 5% 2%;
+}
 .bottom-content .text-container {
     padding-right: 4%;
 }
@@ -162,12 +199,4 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
-}
-
-.top-content.about-page {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin-bottom: 20px;
-    border: none;
 }
